@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<manifest>
+    <!-- 
+    remote: 远程代码库配置
+    name: 远程仓库名，在使用 git clone 时默认为 origin
+    fetch: 远程仓库地址，用户和 project 节点中的 name 一起确定项目地址
+    -->
+    <!-- remote server -->
+
+    <remote
+        name="origin"
+        fetch="" />
+
+    <remote
+        name="test1"
+        fetch="https://gitee.com/restraintyouself" />
+    <remote
+        name="test2"
+        fetch="https://gitee.com/restraintyouself" />
+    <remote
+        name="test3"
+        fetch="https://gitee.com/restraintyouself" />
+
+    <remote
+        name="test4"
+        fetch="https://gitee.com/restraintyouself" />
+
+    <remote
+        name="test5"
+        fetch="https://gitee.com/restraintyouself" />
+    <!--
+    default: 默认配置
+    remote: 默认使用的远程仓库
+    revision: 默认使用的分支
+    sync-j: 同步代码时的并发数
+    -->
+    <default
+        remote="origin"
+
+        sync-j="3" />
+
+    <!--
+    project: 单个代码库配置
+    name: 项目地址，和指定的 remote 节点中的 fetch 一起组成仓库地址（fetch + name）
+    group: 项目所属分组，可选
+    path: 项目拉取到本地后所在目录
+    remote: 指定所在远程仓库
+    revision: 指定代码分支
+    -->
+    <!--
+    <project
+        name="manifests"
+        group="lwq"
+        path="manifests"
+        revision="master" />
+    -->
+
+    <project
+        name="test1"
+        group="lwq"
+        path="test1"
+        revision="driver" />
+
+    <project
+        name="test2"
+        group="lwq"
+        path="test2"
+        revision="driver" />
+
+    <project
+        name="test3"
+        group="lwq"
+        path="test3"
+        revision="driver" />
+
+    <project
+        name="test4"
+        group="lwq"
+        path="test4"
+        revision="new_branch" />
+    <project
+        name="test5"
+        group="lwq"
+        patch="test5"
+        revision="master"
+        remote="test5" />
+</manifest>
