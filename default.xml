@@ -10,25 +10,12 @@
 
     <remote
         name="origin"
-        fetch="" />
+        fetch="https://github.com/147258369l5" />
 
     <remote
         name="test1"
-        fetch="https://gitee.com/restraintyouself" />
-    <remote
-        name="test2"
-        fetch="https://gitee.com/restraintyouself" />
-    <remote
-        name="test3"
-        fetch="https://gitee.com/restraintyouself" />
+        fetch="https://github.com/147258369l5" />
 
-    <remote
-        name="test4"
-        fetch="https://gitee.com/restraintyouself" />
-
-    <remote
-        name="test5"
-        fetch="https://gitee.com/restraintyouself" />
     <!--
     default: 默认配置
     remote: 默认使用的远程仓库
@@ -37,7 +24,6 @@
     -->
     <default
         remote="origin"
-
         sync-j="3" />
 
     <!--
@@ -60,29 +46,6 @@
         name="test1"
         group="lwq"
         path="test1"
-        revision="driver" />
-
-    <project
-        name="test2"
-        group="lwq"
-        path="test2"
-        revision="driver" />
-
-    <project
-        name="test3"
-        group="lwq"
-        path="test3"
-        revision="driver" />
-
-    <project
-        name="test4"
-        group="lwq"
-        path="test4"
-        revision="new_branch" />
-    <project
-        name="test5"
-        group="lwq"
-        patch="test5"
-        revision="master"
-        remote="test5" />
+        revision="driver"
+        remote="test1"/>
 </manifest>
