@@ -39,13 +39,13 @@
         name="manifests"
         group="lwq"
         path="manifests"
-        revision="master" />
+        revision="" />
     -->
 
     <project
         name="test1"
         group="lwq"
         path="test1"
-        revision="driver"
+        revision=""
         remote="test1"/>
 </manifest>
